@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
 	// Initiate gifLoop for set interval
 	var refresh;
 	// Duration count in seconds
@@ -31,6 +32,10 @@ $(document).ready(function() {
 	// Display Gif in gif wrap container
 	var renderGif = _giphy => {
 		console.log(_giphy);
+		console.log(_giphy.images.original.url);
+		
+ navigator.clipboard.writeText(_giphy.images.original.url);
+
 		// Set gif as bg image
 		$gif_wrap.css({
 			"background-image": 'url("' + _giphy.images.original.url + '")'
@@ -52,8 +57,7 @@ $(document).ready(function() {
 
 	// Call Giphy API for new gif
 	newGif();
-	
-	
+
 	const newGifButton = $('#new-gif');
 	
 	newGifButton.click(newGif)
