@@ -7,7 +7,7 @@ $(document).ready(function() {
 	// Giphy API defaults
 	const giphy = {
 		baseURL: "https://api.giphy.com/v1/gifs/",
-		apiKey: "0UTRbFtkMxAplrohufYco5IY74U8hOes",
+		apiKey: "i4puxrRbZEceVomayT8vkZa0tmDZtv8y",
 		tag: "fail",
 		type: "random",
 		rating: "pg-13"
