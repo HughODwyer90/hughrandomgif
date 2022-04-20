@@ -2,13 +2,23 @@ $(document).ready(function() {
 	
 	// Initiate gifLoop for set interval
 	var refresh;
+	var getTag = "fail";
 	// Duration count in seconds
 	const duration = 1000 * 10;
 	// Giphy API defaults
+	if (getMonth() == 0){
+	getTag = "new year"
+	}
+	if (getMonth() == 3){
+	getTag = "chocolate"
+	}
+	if (getMonth() == 10 || getMonth() == 11){
+	getTag = "christmas"
+	}
 	const giphy = {
 		baseURL: "https://api.giphy.com/v1/gifs/",
 		apiKey: "i4puxrRbZEceVomayT8vkZa0tmDZtv8y",
-		tag: "fail",
+		tag: getTag,
 		type: "random",
 		rating: "pg-13"
 	};
