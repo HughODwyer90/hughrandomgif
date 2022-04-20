@@ -8,7 +8,7 @@ $(document).ready(function() {
 	const giphy = {
 		baseURL: "https://api.giphy.com/v1/gifs/",
 		apiKey: "0UTRbFtkMxAplrohufYco5IY74U8hOes",
-		tag: "hacking",
+		tag: "fail",
 		type: "random",
 		rating: "pg-13"
 	};
