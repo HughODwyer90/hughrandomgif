@@ -20,7 +20,7 @@ $(document).ready(function() {
 	if (month == 9){
 	getTag = "halloween"
 	}
-	if (month == 10 || month == 11){
+	if (month == 11){
 	getTag = "christmas"
 	}
 	const giphy = {
