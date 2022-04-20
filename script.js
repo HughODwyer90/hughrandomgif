@@ -11,8 +11,14 @@ $(document).ready(function() {
 	if (month == 0){
 	getTag = "new year"
 	}
-	if (month == 3){
-	getTag = "chocolate"
+	if (month == 2){
+	getTag = "irish"
+	}
+	if (month == 6){
+	getTag = "birthday"
+	}
+	if (month == 9){
+	getTag = "halloween"
 	}
 	if (month == 10 || month == 11){
 	getTag = "christmas"
