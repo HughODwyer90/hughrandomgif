@@ -3,16 +3,18 @@ $(document).ready(function() {
 	// Initiate gifLoop for set interval
 	var refresh;
 	var getTag = "fail";
+	const d = new Date();
+	let month = d.getMonth();
 	// Duration count in seconds
 	const duration = 1000 * 10;
 	// Giphy API defaults
-	if (getMonth() == 0){
+	if (month == 0){
 	getTag = "new year"
 	}
-	if (getMonth() == 3){
+	if (month == 3){
 	getTag = "chocolate"
 	}
-	if (getMonth() == 10 || getMonth() == 11){
+	if (month == 10 || month == 11){
 	getTag = "christmas"
 	}
 	const giphy = {
