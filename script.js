@@ -14,6 +14,9 @@ $(document).ready(function() {
 	if (month == 2){
 	getTag = "irish"
 	}
+	if (month == 5){
+	getTag = "pride"
+	}
 	if (month == 6){
 	getTag = "birthday"
 	}
